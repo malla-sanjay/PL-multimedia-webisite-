@@ -16,4 +16,12 @@ function ServiceCard (props) {
   )
 };
 
-export default ServiceCard;
+function MoreCard (props) {
+  return(
+    <div className="serviceCard">
+      <p className="moreDetails">{props.moreDetails}</p>
+    </div>
+  )
+};
+
+export {ServiceCard, MoreCard}; 

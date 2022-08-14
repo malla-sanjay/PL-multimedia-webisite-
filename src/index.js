@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ServiceCard from './ServiceCard';
-import "./serviceCard.css";
+import Services from './Services'
 
+//<Services> is the main service page with all the required services elements
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ServiceCard logo={require("./logo/seo.png")} title="SEO Optimization" description="lorem20 is not working on my vs code so i am randomly typing this paragraph."/>
+   <Services/>
   </React.StrictMode>
 );
 
