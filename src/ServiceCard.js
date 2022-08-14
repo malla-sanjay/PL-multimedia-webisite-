@@ -3,17 +3,17 @@
 
 import React from "react";
 
-function App (props) {
+function ServiceCard (props) {
   return(
     <div className="serviceCard">
       <img className="logo" src={props.logo} alt="services logo"></img>
       <div className="aboutLogo">
-        <h2>{props.title}</h2>
-        <h3>{props.description}</h3>
+        <p className="cardName"><b>{props.title}</b></p>
+        <p className="cardDescription">{props.description}</p>
       </div>
       <button className="contactButton">Click to Contact</button>
     </div>
   )
 };
 
-export default App;
+export default ServiceCard;
